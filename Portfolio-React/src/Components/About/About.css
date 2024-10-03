@@ -74,9 +74,12 @@
 }
 .about-acs{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
     margin-bottom: 80px;
+   
 
 }
 .about-ac{
@@ -146,7 +149,13 @@
     }
     .about-acs{
         justify-content: space-between;
+
+
     }
+   
+     
+
+
     .about-ac{
         gap: 10px;
     }
@@ -158,5 +167,22 @@
     .about-acs p{
         text-align: center;
         font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .about-acs hr,
+    .about-ac hr {
+        display: block;
+    }
+}
+.about-acs hr,
+.about-ac hr {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .about-acs hr,
+    .about-ac hr {
+        display: none;
     }
 }
