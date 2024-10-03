@@ -2,7 +2,7 @@
     display: flex;
     flex-direction:row;
     align-items: center;
-    justify-content:space-between;
+    justify-content:center;
     margin: 20px 170px;
    gap: 20px;
 }
@@ -27,4 +27,70 @@
   }
   .nav-connect:hover{
     transform: scale(1.05);
+  }
+  .paint {
+    display: flex;
+    margin: auto;
+    width: 60px;
+    height: 30px;
+  }
+  .nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .anchor-link{
+    text-decoration: none;
+    color: white;
+  }
+  .nav-close{
+    display: none;
+  }
+  .nav-open{
+    display: none;
+  }
+  @media(max-width:768px){
+    .navbar{
+      margin: 20px 50px;
+
+    }
+    .nav-connect{
+      display: none;
+    }
+    .nav-open{
+      display: block;
+      position: fixed;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+    }
+    .nav-close{
+      display: block;
+      position: relative;
+      top: 30px;
+      left: 290px;
+      width: 50px;
+      height: 50px;
+    }
+    .nav-menu{
+      position: fixed;
+      flex-direction: column;
+      align-items: start;
+      top: 0;
+      gap: 30px;
+      background-color: #1f0016;
+      width: 350px;
+      height: 100%;
+      z-index: 2;
+      transition: right 0.5s;
+      right: -350px;
+    }
+    .nav-menu li {
+      font-size: 30px;
+      padding-left: 100px;
+      flex-direction: row;
+      gap: 20px;
+
+    }
   }

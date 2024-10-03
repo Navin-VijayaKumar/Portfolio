@@ -3,7 +3,7 @@ import './Services.css'
 import py from '../Assets/py.png'
 const Services = () => {
   return (
-    <div className='ser'>
+    <div id='certificate' className='ser'>
     <div className="ser-title">
        <h1>My Certification</h1>
        <div className="Certificate">

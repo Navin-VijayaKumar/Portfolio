@@ -4,11 +4,10 @@ import profilepic from '../Assets/profilepic.jpg'
 import palette from '../Assets/palette.png'
 const About = () => {
   return (
-    <div className='about'>
+    <div id='about' className='about'>
 
        <div className="about-title">
         <h1>About me</h1>
-        <img src={palette} alt=''></img>
        </div>
        <div className="about-sec">
         <div className="about-left">
@@ -38,7 +37,7 @@ const About = () => {
        </div>
        <div className="about-acs">
         <div className="about-ac">
-         <h1>60+</h1>
+         <h1>80+</h1>
          <p>Problens Solved in leedcode</p>
         </div>
         <hr/>
