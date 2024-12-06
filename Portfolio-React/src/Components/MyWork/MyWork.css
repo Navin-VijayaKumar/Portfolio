@@ -70,7 +70,12 @@
         border: 2px solid white;
         transition: 0.4s;
         cursor: pointer;
-        height: 300px;
-        width: 500px;
+        height: 250px;
+        width: 330px;
+        padding-left: 53px;
+    }
+    .displ img {
+        width: 420px;
+        height: 280px;
     }
 }
