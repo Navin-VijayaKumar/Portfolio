@@ -31,7 +31,8 @@
 }
 .about-sec{
     display: flex;
-    gap: 80px;
+    padding-left: 200px;
+    gap: 40px;
 }
 .about-right{
     display: flex;

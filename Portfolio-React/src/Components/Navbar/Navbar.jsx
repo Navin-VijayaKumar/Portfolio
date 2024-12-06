@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 import { useState } from 'react'
-import paint from '../Assets/paint.webp'
+import iconport from '../Assets/iconport.png'
 import  AnchorLink from 'react-anchor-link-smooth-scroll'
 import c2 from '../Assets/c2.png'
 import s2 from '../Assets/s2.png'
@@ -27,11 +27,11 @@ const closemenu =()=>{
         </div>
            <ul ref={menuRef}  className="nav-menu">
             <img src={c2} onClick={closemenu} className='nav-close' alt=''></img>
-            <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu==='home'?<img className='paint' src={paint} alt=''/>:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setMenu("about")}>About me</p></AnchorLink>{menu==='about'?<img className='paint' src={paint} alt=''/>:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#certificate'><p onClick={()=>setMenu("certificate")}>Certification</p></AnchorLink>{menu==='certificate'?<img className='paint' src={paint} alt=''/>:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>setMenu("work")}>My Works</p></AnchorLink>{menu==='work'?<img className='paint' src={paint} alt=''/>:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contact</p></AnchorLink>{menu==='contact'?<img className='paint' src={paint} alt=''/>:<></>}</li>
+            <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu==='home'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setMenu("about")}>About me</p></AnchorLink>{menu==='about'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#certificate'><p onClick={()=>setMenu("certificate")}>Certification</p></AnchorLink>{menu==='certificate'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>setMenu("work")}>My Works</p></AnchorLink>{menu==='work'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contact</p></AnchorLink>{menu==='contact'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
          
     </ul>
     <div className="nav-connect">

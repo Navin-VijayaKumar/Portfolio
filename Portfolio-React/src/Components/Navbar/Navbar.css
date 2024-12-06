@@ -30,10 +30,11 @@
   }
   .paint {
     display: flex;
-    margin: auto;
-    width: 60px;
-    height: 30px;
+   
+    width: 100px;
+    height: 20px;
   }
+  
   .nav-menu li{
     display: flex;
     flex-direction: column;
