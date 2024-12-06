@@ -10,6 +10,7 @@
 
 .ser-titlea {
     position: relative;
+    padding-left: 50px;
 }
 
 .ser-titlea h1 {
@@ -77,5 +78,14 @@
     .displ img {
         width: 420px;
         height: 280px;
+    }
+    .all-displ{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap:wrap ;
+        gap: 50px;
+        transition: 0.5s;
     }
 }
