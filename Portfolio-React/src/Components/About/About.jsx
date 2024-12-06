@@ -37,7 +37,7 @@ const About = () => {
        </div>
        <div className="about-acs">
         <div className="about-ac">
-         <h1>80+</h1>
+         <h1>100+</h1>
          <p>Problens Solved in leedcode</p>
         </div>
         <hr/>
