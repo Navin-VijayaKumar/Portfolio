@@ -32,19 +32,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    
     padding: 50px;
     border-radius: 10px;
     border: 2px solid white;
     transition: 0.4s;
     cursor: pointer;
-    height: 300px;
+    height: 260px;
     width: 500px;
 }
 
 .displ img {
-    width: 498px;
-    height: 280px;
+    width: 590px;
+    height: 600px;
+    padding-top: 0px;
+    margin-top: 0px;
+    border-radius: 6px;
+}
+.displ h3{
+    font-family: sans-serif;
+    padding-top: 2px;
+
 }
 .all-displ{
     display: flex;

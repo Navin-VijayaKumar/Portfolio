@@ -119,8 +119,8 @@ font-weight: 500;
       transform: scale(1.1);
       transition: 0.3s;
 }
-@media(max-width:768px){
-    .contact{
+@media (max-width: 768px) {
+        .contact{
         gap: 50px;
         margin: 50px 70px;
         align-items: start;
@@ -168,6 +168,8 @@ font-weight: 500;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: 50px;
+        margin-left: 53px;
 
     }
 

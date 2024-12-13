@@ -17,21 +17,21 @@ const MyWork = () => {
     
         <div className="displ">
         
-          <h3>1</h3>
+         
           <img src={pff}></img>
           <h3>E-COMMERCE WEBSITE PC-FACTORY</h3>
          </div>
          <div className="displ">
         
-        <h3>2</h3>
+      
         <img src={pa}></img>
         <h3>PET ADOPTION WEBSITE MERN STACK</h3>
        </div>
        <div className="displ">
         
-        <h3>3</h3>
-        <img src=""></img>
-        <h3>AQUA SCAPE WEBSITE MERN STACK</h3>`
+       
+        <img src={pa}></img>
+        <h3>AQUA SCAPE WEBSITE MERN STACK</h3>
        </div>
        </div>
         </div>

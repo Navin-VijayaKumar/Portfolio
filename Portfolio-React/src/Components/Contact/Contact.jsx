@@ -48,7 +48,11 @@ const Contact = () => {
             </div>
             <div className="contact-detail">
             <img src={location} alt=''></img>
-            <p>abc @ abc @ abc</p>
+            <p>52c,Thiruvalluvar street,
+               Sathyamangalam,
+               Tamil Nadu
+
+            </p>
             </div>
 
         </div>
