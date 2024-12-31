@@ -2,6 +2,7 @@ import React from 'react'
 import './MyWork.css'
 import pff from '../Assets/pff.png'
 import pa from '../Assets/pa.png'
+import ns1 from '../Assets/ns1.png'
 const MyWork = () => {
   return (
     
@@ -30,7 +31,7 @@ const MyWork = () => {
        <div className="displ">
         
        
-        <img src={pa}></img>
+        <img src={ns1}></img>
         <h3>AQUA SCAPE WEBSITE MERN STACK</h3>
        </div>
        </div>

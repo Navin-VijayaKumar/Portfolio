@@ -15,19 +15,19 @@ const Services = () => {
 
     <div className="disp">
     
-      <h3>1</h3>
+      
       <img src={py}></img>
       <h3>Python course complited</h3>
      </div>
      <div className="disp">
     
-    <h3>2</h3>
+    
     <img src={py}></img>
     <h3>Python course complited</h3>
    </div>
    <div className="disp">
     
-    <h3>3</h3>
+    
     <img src={py}></img>
     <h3>Python course complited</h3>
    </div>
