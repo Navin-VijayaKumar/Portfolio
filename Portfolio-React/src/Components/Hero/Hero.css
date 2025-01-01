@@ -65,9 +65,22 @@ a{
     border-radius: 50px;
     border: 2px solid white;
     cursor: pointer;
-    color: white;
     box-sizing: border-box;
+   
+}
+.hero-resume button{
+    color: #ffffff;
+    background-color: rgb(23, 22, 22);
+    width: 125px;
+    padding: 1x;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: 600;
+    transition:2s;
 
+}
+.hero-resume button:hover{
+transform: scale(1.5);
 }
 .hero-cunnect:hover{
     border: 2px solid white;

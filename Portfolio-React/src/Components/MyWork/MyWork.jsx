@@ -15,6 +15,12 @@ const MyWork = () => {
     <div className="all-displ">
     
     
+       <div className="displ">
+        
+       
+        <img src={ns1}className='pro-img'></img>
+        <h3>AQUA SCAPE WEBSITE MERN STACK</h3>
+       </div>
         <div className="displ">
         
          
@@ -26,12 +32,6 @@ const MyWork = () => {
       
         <img src={pa}className='pro-img'></img>
         <h3>PET ADOPTION WEBSITE MERN STACK</h3>
-       </div>
-       <div className="displ">
-        
-       
-        <img src={ns1}className='pro-img'></img>
-        <h3>AQUA SCAPE WEBSITE MERN STACK</h3>
        </div>
        </div>
         </div>

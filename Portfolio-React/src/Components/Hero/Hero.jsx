@@ -4,6 +4,13 @@ import profilepic from '../Assets/profilepic.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/navinres.docx';
+    link.download = 'navinres.docx';
+    link.click(); 
+  };
+
   return (
     <div id="home" className="hero">
       <img className="pic" src={profilepic} alt="Profile" />
@@ -18,13 +25,9 @@ const Hero = () => {
         <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink>
     </div>
         <div className="hero-resume">
-          <a
-            href="/navinres.docx"
-            download="navinres.docx"
-            className="resume-link"
-          >
-            My Resume
-          </a>
+          <button onClick={handleDownloadResume} className="resume-button">
+          My Resume
+          </button>
         </div>
       </div>
     </div>
