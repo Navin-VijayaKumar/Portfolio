@@ -42,6 +42,8 @@
     cursor: pointer;
     height: 300px;
     width: 500px;
+    box-sizing: border-box;
+
 
 }
 

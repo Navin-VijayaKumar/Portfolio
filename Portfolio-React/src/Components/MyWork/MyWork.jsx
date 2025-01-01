@@ -12,26 +12,25 @@ const MyWork = () => {
            <div className="Certificate">
             
            </div>
-           <img src='' alt=''></img>
     <div className="all-displ">
     
     
         <div className="displ">
         
          
-          <img src={pff}></img>
+          <img src={pff} className='pro-img'></img>
           <h3>E-COMMERCE WEBSITE PC-FACTORY</h3>
          </div>
          <div className="displ">
         
       
-        <img src={pa}></img>
+        <img src={pa}className='pro-img'></img>
         <h3>PET ADOPTION WEBSITE MERN STACK</h3>
        </div>
        <div className="displ">
         
        
-        <img src={ns1}></img>
+        <img src={ns1}className='pro-img'></img>
         <h3>AQUA SCAPE WEBSITE MERN STACK</h3>
        </div>
        </div>
