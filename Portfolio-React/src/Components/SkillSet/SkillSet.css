@@ -1,0 +1,64 @@
+.rot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ padding: 50px;
+
+}
+.rot-img{
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+
+}
+.rot-img1{
+    width: 290px;
+    height: 260px;
+
+}
+.rot h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+}
+.rot-items
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.rot-item1 {
+    animation: appear11 10s linear;   
+     animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+}
+
+@keyframes appear11{
+    from{
+        opacity: 0;
+        transform: translateX(-100px) rotate(0deg);    }
+    to{
+        opacity: 1;
+        transform: translateX(0) rotate(360deg);    }
+}
+.rot-item2 {
+    animation: appear12 10s linear; 
+       animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+}
+@keyframes appear12{
+    from{
+        opacity: 0;
+        transform: translateX(100px) rotate(0deg);    }
+    to{
+        opacity: 1;
+        transform: translateX(0) rotate(-360deg);    }
+}

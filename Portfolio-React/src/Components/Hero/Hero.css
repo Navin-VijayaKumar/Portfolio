@@ -66,21 +66,28 @@ a{
     border: 2px solid white;
     cursor: pointer;
     box-sizing: border-box;
+    height: 80px;
+    display: flex;
+    align-items: center;
    
 }
 .hero-resume button{
     color: #ffffff;
-    background-color: rgb(23, 22, 22);
-    width: 125px;
-    padding: 1x;
-    border-radius: 6px;
+    width: 125.3px;
+    cursor: pointer;
+
+    height: 50px;
+    background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF);
+    border-radius: 50px;
     font-size: 22px;
     font-weight: 600;
     transition:2s;
+    border: none;
 
 }
 .hero-resume button:hover{
 transform: scale(1.5);
+border: none;
 }
 .hero-cunnect:hover{
     border: 2px solid white;
