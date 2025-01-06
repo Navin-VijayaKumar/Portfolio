@@ -58,6 +58,8 @@ a{
     border-radius: 50px;
     background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF);
     cursor: pointer;
+    border: 2px solid white;
+
     box-sizing: border-box;
 }
 .hero-resume{
@@ -65,32 +67,34 @@ a{
     border-radius: 50px;
     border: 2px solid white;
     cursor: pointer;
+    background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF);
+    
     box-sizing: border-box;
     height: 80px;
     display: flex;
     align-items: center;
-   
+    
 }
+
 .hero-resume button{
     color: #ffffff;
     width: 125.3px;
     cursor: pointer;
 
     height: 50px;
-    background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF);
     border-radius: 50px;
+    background-color: transparent;
     font-size: 22px;
-    font-weight: 600;
     transition:2s;
     border: none;
 
 }
 .hero-resume button:hover{
-transform: scale(1.5);
 border: none;
 }
 .hero-cunnect:hover{
-    border: 2px solid white;
+    border-color: #B415FF;
+
 }
 .hero-resume:hover{
     border-color: #B415FF;
