@@ -36,7 +36,7 @@
 .rot-item1 {
     animation: appear11 10s linear;   
      animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 40%;
 
 }
 
@@ -51,7 +51,7 @@
 .rot-item2 {
     animation: appear12 10s linear; 
        animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 40%;
 
 }
 @keyframes appear12{
@@ -61,4 +61,40 @@
     to{
         opacity: 1;
         transform: translateX(0) rotate(-360deg);    }
+}
+@media(max-width:768px){
+     .rot{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+     
+    
+    }
+    .rot-img{
+        width: 60px;
+        height: 60px;
+       
+    
+    }
+    .rot-img1{
+        display: block;
+        width: 120px;
+        height: 120px;
+    
+    }
+.rot-items
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 0px;
+    padding-right: 0px;
+    flex-direction: row;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
 }

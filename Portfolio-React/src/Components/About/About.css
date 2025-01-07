@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 80px 10px;
 }
 .about-left img{
    height: 350px;
@@ -52,7 +52,7 @@
 }
 .about-sec{
     display: flex;
-    padding-left: 200px;
+    padding-left: 20px;
     gap: 30px;
 }
 .about-right{
@@ -139,6 +139,7 @@
         gap: 80px;
         margin: 50px 70px;
         align-items: start;
+        padding-left: 50px;
 
 
     }
