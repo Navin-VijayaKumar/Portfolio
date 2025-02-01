@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif;
+}
 @keyframes appear2{
     from{
         opacity: 0;
@@ -193,6 +196,83 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .about-acs hr,
+    .about-ac hr {
+        display: block;
+    }
+}
+.about-acs hr,
+.about-ac hr {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .about-acs hr,
+    .about-ac hr {
+        display: none;
+    }
+}
+@media (max-width: 400px){
+        .about{
+        gap: 80px;
+        margin: 50px 70px;
+        width: 400px;
+        align-items: start;
+        padding-left: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    .about-title h1{
+      font-size: 78px;
+    }
+    .about-sec{
+        flex-direction: column;
+    }
+    .about-left{
+        display: none;
+
+    }
+    .about-para{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .about-skils{
+        gap: 20px;
+        align-items: center;
+    }
+    .about-skils p{
+        font-size: 20px;
+
+    }
+    .about-skils hr{
+        height: 6px;
+
+    }
+    .about-acs{
+        justify-content: space-between;
+
+
+    }
+   
+     
+
+
+    .about-ac{
+        gap: 10px;
+    }
+    .about-ac h1{
+        font-size: 34px;
+        font-weight: 700;
+
+    }
+    .about-acs p{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 400px) {
     .about-acs hr,
     .about-ac hr {
         display: block;

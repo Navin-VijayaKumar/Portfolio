@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif;
+}
 @keyframes appear1{
     from{
         opacity: 0;
@@ -96,6 +99,34 @@
         height: 250px;
         width: 330px;
         padding-left: 53px;
+    }
+
+}
+@media (max-width: 400px){
+    .ser{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 160px;
+    }
+    .disp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 50px;
+        border-radius: 10px;
+        border: 2px solid white;
+        transition: 0.4s;
+        cursor: pointer;
+        height: 250px;
+        width: 400px;
+        padding-left: 53px;
+    }
+    .ser-title h1{
+        font-size: 78px;
+
     }
 
 }

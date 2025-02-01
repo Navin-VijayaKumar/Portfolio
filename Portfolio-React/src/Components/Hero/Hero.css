@@ -1,5 +1,5 @@
 body{
-    font-family:  'Roboto', sans-serif;
+    font-family:  sans-serif;
 }
 .hero{
     display: flex;
@@ -11,9 +11,9 @@ body{
 
 }
 .hero img{
-    height: 250px;
+    height: 265px;
     width: 240px;
-    border-radius: 500px;
+    border-radius: 48%;
     margin-top: 190px;
     object-fit: cover;
     background-color: white;
@@ -137,4 +137,56 @@ border: none;
         font-size: 23px;
     }
  
+}
+@media (max-width: 400px){
+    .hero img{
+
+        margin-top:120px;
+        width: 290px;
+    }
+    .hero{
+        padding-left: 100px;
+        width: 380px;
+    }
+    .hero h1{
+        margin-top: 50px;
+        width: 95%;
+        font-size: 50px;
+        
+    }
+    .hero p {
+        width: 90%; 
+        font-size: 26px; 
+        font-family: sans-serif;
+        line-height: 38px; 
+        margin: 30px auto; 
+        text-align: center; 
+        padding: 10px; 
+       
+    }
+    .hero-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hero-resume{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 108px;
+        font-size: 23px;
+    }
+    .hero-cunnect{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 108px;
+        font-size: 23px;
+
+       
+    }
+
 }
