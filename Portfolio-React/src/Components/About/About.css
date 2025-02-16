@@ -216,9 +216,9 @@ body{
         .about{
         gap: 80px;
         margin: 50px 70px;
-        width: 500px;
+        width: 550px;
         align-items: start;
-        padding-left: 30px;
+        padding-left: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
