@@ -1,0 +1,121 @@
+:root {
+    --background-color: #121212;
+    --title-color: #ffffff;
+    --text-color: #cccccc;
+    --container-color: #1e1e1e;
+    --container-color-opp: #ffffff; 
+    --font-medium: 500;
+    --normal-font: 1.1rem;
+    --small-font: 0.9rem;
+  }
+  .sara{
+    margin-bottom: 200px;
+  }
+  /* Main Section Styling */
+  .project.section {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2rem 0;
+  }
+  
+  /* Filters */
+  .project__filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project__item {
+    color: var(--title-color);
+    padding: 0.25rem 0.75rem;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+    text-transform: capitalize;
+    font-size: 33px;
+    cursor: pointer;
+    border: 1px solid #333;
+    transition: 0.3s;
+  }
+  
+  .project__item:hover {
+    background-color: var(--container-color-opp);
+    color: var(--container-color);
+  }
+  
+  .activeNav {
+    background-color: var(--container-color-opp);
+    color: var(--container-color);
+  }
+  
+  /* Project Grid */
+  .project__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  /* Project Card */
+  .project__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Image */
+  .project__img {
+    width:430px;
+    height: 300px;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  /* Title */
+  .project__title {
+    font-size: var(--normal-font);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+  }
+  .ser-titlea h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+}
+  
+  /* Button */
+  .project__button {
+    color: var(--text-color);
+    font-size: var(--small-font);
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .project__button:hover {
+    color: var(--container-color-opp);
+  }
+  
+  .project__button-icon {
+    font-size: 1rem;
+    transition: transform 0.4s;
+  }
+  
+  .project__button:hover .project__button-icon {
+    transform: translateX(0.25rem);
+  }
+  

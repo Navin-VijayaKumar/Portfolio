@@ -6,8 +6,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Hero = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/navinres.docx';
-    link.download = 'navinres.docx';
+    link.href = '/navinres.pdf';
+    link.download = 'navinres.pdf';
     link.click(); 
   };
 

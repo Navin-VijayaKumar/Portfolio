@@ -6,7 +6,7 @@ import ns1 from '../Assets/ns1.png'
 const MyWork = () => {
   return (
     
-        <div id='work' className='sera'>
+        <div  className='sera'>
         <div className="ser-titlea">
            <h1>My Latest Work</h1>
            <div className="Certificate">
