@@ -1,34 +1,37 @@
 import pff from '../Assets/pff.png'
 import pa from '../Assets/pa.png'
 import ns1 from '../Assets/ns1.png'
+import ns from '../Assets/ns.png'
 export const ProjectData =[
     {
         id:1,
-        image: ns1,
-        title: "Anonymous feedback app",
+        image: ns,
+        title: "NEON STORE PRODUCT KEY SELLING PLATFORM",
         category: "web",
-        link:"https://whispherwire.netlify.app/"
+        link:"https://neon-store.onrender.com/"
     },
-    // {
-    //     id:2,
-    //     image: Work2,
-    //     title: "farmify",
-    //     category: "web"
-    // },
+    {
+        id:2,
+        image: pff,
+        title: "E-COMMERCE WEBSITE PC-FACTORY",
+        category: "Web",
+        link:"https://pc-factory-a2d.vercel.app/"
+    },
     {
         id:3,
         image: pa,
-        title: "Movie recommendation app",
-        category: "ML",
-        link: "https://www.linkedin.com/posts/nikilhari-r-767568259_machinelearning-movierecommendations-streamlit-activity-7172255696355254272-XIyr?utm_source=share&utm_medium=member_desktop"
+        title: "PET ADOPTION WEBSITE MERN STACK",
+        category: "web",
+        link:"https://ecoadapation.onrender.com/"
     },
+   
     {
         id:4,
-        image: pff,
-        title: "IPL Winning prediction app",
-        category: "ML",
-        link:"https://www.linkedin.com/posts/nikilhari-r-767568259_systemtron-activity-7159475426942185472-NaW4?utm_source=share&utm_medium=member_desktop"
-    }
+        image: ns1,
+        title: "AQUA SCAPE WEBSITE MERN STACK",
+        category: "Web",
+        link: "https://nextscape.vercel.app/"
+    },
 ];
 export const projectsNav =[
     {
