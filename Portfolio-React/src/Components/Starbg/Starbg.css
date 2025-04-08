@@ -1,0 +1,33 @@
+/* src/components/StarBackground.css */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: moveStars 10s linear infinite;
+  }
+  
+  @keyframes moveStars {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) scale(0.5);
+      opacity: 0;
+    }
+  }
+
+  

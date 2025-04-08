@@ -9,9 +9,11 @@ import Footer from './Components/Footer/Footer'
 import SkillSet from './Components/SkillSet/SkillSet'
 import ProjectItems from './Components/Projects/ProjectItems'
 import Projects from './Components/Projects/Projects'
+import Starbg from './Components/Starbg/Starbg'
 const App = () => {
   return (
     <div>
+      <Starbg></Starbg>
       <Navbar/>
       <Hero/>
       <About/>

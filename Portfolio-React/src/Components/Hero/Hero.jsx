@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 import profilepic from '../Assets/profilepic.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
+import { useEffect } from 'react';
 const Hero = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
@@ -11,8 +11,11 @@ const Hero = () => {
     link.click(); 
   };
 
+
+
   return (
     <div id="home" className="hero">
+
       <img className="pic" src={profilepic} alt="Profile" />
       <h1>
         <span>Hello, I'am Navin,</span>A full stack developer

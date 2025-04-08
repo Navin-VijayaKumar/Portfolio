@@ -189,14 +189,12 @@ font-weight: 500;
         align-items: center;
         justify-content: center;
         font-size: 78px;
-        margin-left: 80px;        
     }
         .contact{
             display: flex;
             align-items: center;
         justify-content: center;
         width: 500px;
-        padding-left: 50px;
         gap: 50px;
         margin: 50px 70px;
         align-items: start;
