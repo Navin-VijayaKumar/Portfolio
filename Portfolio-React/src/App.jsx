@@ -18,7 +18,6 @@ const App = () => {
       <Hero/>
       <About/>
       <SkillSet></SkillSet>
-      <Services/>
       <ProjectItems></ProjectItems>
       <Projects></Projects>
       <Contact/>

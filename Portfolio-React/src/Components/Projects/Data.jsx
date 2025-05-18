@@ -2,6 +2,7 @@ import pff from '../Assets/pff.png'
 import pa from '../Assets/pa.png'
 import ns1 from '../Assets/ns1.png'
 import ns from '../Assets/ns.png'
+import mlpro from '../Assets/mlpro.png'
 export const ProjectData =[
     {
         id:1,
@@ -14,7 +15,7 @@ export const ProjectData =[
         id:2,
         image: pff,
         title: "E-COMMERCE WEBSITE PC-FACTORY",
-        category: "Web",
+        category: "web",
         link:"https://pc-factory-a2d.vercel.app/"
     },
     {
@@ -29,8 +30,14 @@ export const ProjectData =[
         id:4,
         image: ns1,
         title: "AQUA SCAPE WEBSITE MERN STACK",
-        category: "Web",
+        category: "web",
         link: "https://nextscape.vercel.app/"
+    },
+    {
+        id:5,
+        image: mlpro,
+        title: "Student Stress Prediction",
+        category: "ML",
     },
 ];
 export const projectsNav =[
