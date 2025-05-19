@@ -37,18 +37,18 @@ const About = () => {
        </div>
        <div className="about-acs">
         <div className="about-ac">
-         <h1>100+</h1>
+         <h1>160+</h1>
          <p>Problens Solved in leedcode</p>
         </div>
         <hr/>
         <div className="about-ac">
          <h1>3</h1>
-         <p>Badges in Hackerrank</p>
+         <p>Internships</p>
         </div>
         <hr/>
         <div className="about-ac">
-         <h1>5</h1>
-         <p>Courses complited in Infosys Springboard</p>
+         <h1>2</h1>
+         <p>International Certification</p>
         </div>
        </div>
     </div>

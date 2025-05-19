@@ -20,6 +20,7 @@ const App = () => {
       <SkillSet></SkillSet>
       <ProjectItems></ProjectItems>
       <Projects></Projects>
+      {/* <Services/> */}
       <Contact/>
     </div>
   )

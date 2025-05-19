@@ -53,6 +53,12 @@ body{
   .nav-open{
     display: none;
   }
+  .sstt p{
+    padding-left: 20px;
+  }
+  .sstts p{
+    margin-right: 20px;
+  }
   @media(max-width:900px){
     .navbar{
       margin: 20px 50px;

@@ -49,6 +49,11 @@ body{
 
 }
 
+body {
+  overflow-x: clip;
+}
+
+
 @keyframes appear11{
     from{
         opacity: 0;
