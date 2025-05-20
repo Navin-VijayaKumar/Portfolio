@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef} from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 import { useState } from 'react'
@@ -6,7 +6,7 @@ import iconport from '../Assets/iconport.png'
 import  AnchorLink from 'react-anchor-link-smooth-scroll'
 import c2 from '../Assets/c2.png'
 import s2 from '../Assets/s2.png'
-
+import { Link } from 'react-router-dom'
 const Navbar = () => {
 
 const[menu,setMenu]= useState('home');
@@ -35,7 +35,7 @@ const closemenu =()=>{
          
     </ul>
     <div className="nav-connect">
-       <AnchorLink className='anchor-link' offset={50} href='#contact'> Connect With Me</AnchorLink>
+ <Link to="/flow" className='anchor-link' offset={50} href='#contact'>Activity Flow</Link>
     </div>
     </div>
   )
