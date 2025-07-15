@@ -9,7 +9,7 @@ import ProjectItems from './Components/Projects/ProjectItems'
 import Projects from './Components/Projects/Projects'
 import Starbg from './Components/Starbg/Starbg'
 import Flow from './Components/Flow/Flow'
-
+import Services from './Components/Services/Services'
 const App = () => {
   return (
     <Routes>
@@ -25,6 +25,7 @@ const App = () => {
             <Hero />
             <About />
             <SkillSet />
+            {/* <Services /> */}
             <ProjectItems />
             <Projects />
             <Contact />

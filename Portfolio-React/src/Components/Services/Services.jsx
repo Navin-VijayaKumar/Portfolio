@@ -1,9 +1,12 @@
+
+
 import React, { useContext, useState } from "react";
 import "./Services.css";
+// import { motion } from "framer-motion";
 
 const Services = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  // const theme = useContext(themeContext);
+  // const darkMode = theme.state.darkMode;
   const [hoveredCard, setHoveredCard] = useState(null);
   
   const transition = {
@@ -65,85 +68,79 @@ const Services = () => {
     }
   ];
 
- return (
-  <section id="services" className="services-section">
-    <div className={`container ${darkMode ? "white" : ""}`}>
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="services-header"
-      >
-        <h1 className="services-title gradient-text" style={{ color: darkMode ? "white" : "" }}>
-          My Services
-        </h1>
-      </motion.div>
+  return (
+    <section id="services" className="services-section">
+      <div className={`container ${darkMode ? "white" : ""}`}>
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="services-header"
+        >
+          <h1 className="services-title gradient-text" style={{ color: darkMode ? "white" : "" }}>
+            My Services
+          </h1>
+        </motion.div>
 
-      {/* Services cards */}
-      <div className="services-container">
-        {services.map((service, index) => (
-          <motion.div
-            key={service.id}
-            className={`service-card ${darkMode ? "white" : ""}`}
-            initial="initial"
-            whileInView="animate"
-            whileHover="hover"
-            onHoverStart={() => setHoveredCard(service.id)}
-            onHoverEnd={() => setHoveredCard(null)}
-            viewport={{ once: true }}
-            transition={{ ...transition, delay: index * 0.2 }}
-            variants={cardVariants}
-          >
-            <div className="card-content">
-              <div className="icon-container">
-                <motion.div 
-                  className="service-icon"
-                  style={{ backgroundColor: hoveredCard === service.id ? "#FF8A00" : "#FCA61F" }}
-                  variants={iconVariants}
-                >
-                  {service.icon}
-                </motion.div>
+        {/* Services cards */}
+        <div className="services-container">
+          {services.map((service, index) => (
+            <motion.div
+              key={service.id}
+              className={`service-card ${darkMode ? "white" : ""}`}
+              initial="initial"
+              whileInView="animate"
+              whileHover="hover"
+              onHoverStart={() => setHoveredCard(service.id)}
+              onHoverEnd={() => setHoveredCard(null)}
+              viewport={{ once: true }}
+              transition={{ ...transition, delay: index * 0.2 }}
+              variants={cardVariants}
+            >
+              <div className="card-content">
+                <div className="icon-container">
+                  <motion.div 
+                    className="service-icon"
+                    style={{ backgroundColor: hoveredCard === service.id ? "#FF8A00" : "#FCA61F" }}
+                    variants={iconVariants}
+                  >
+                    {service.icon}
+                  </motion.div>
+                </div>
+                
+                <h3 className="card-title" style={{ color: darkMode ? "black" : "" }}>
+                  {service.title}
+                </h3>
+                
+                <div className="title-underline" 
+                  style={{ 
+                    width: hoveredCard === service.id ? "80px" : "50px", 
+                    backgroundColor: hoveredCard === service.id ? "#FF8A00" : "#FCA61F",
+                    transition: "all 0.3s ease"
+                  }}
+                ></div>
+                
+                <p className="card-description" style={{ color: darkMode ? "black" : "" }}>
+                  {service.description}
+                </p>
               </div>
-              
-              <h3 className="card-title" style={{ color: darkMode ? "black" : "" }}>
-                {service.title}
-              </h3>
-              
-              <div className="title-underline" 
-                style={{ 
-                  width: hoveredCard === service.id ? "80px" : "50px", 
-                  backgroundColor: hoveredCard === service.id ? "#FF8A00" : "#FCA61F",
-                  transition: "all 0.3s ease"
-                }}
-              ></div>
-              
-              <p className="card-description" style={{ color: darkMode ? "black" : "" }}>
-                {service.description}
-              </p>
-            </div>
-          </motion.div>
-        ))}
+            </motion.div>
+          ))}
+        </div>
+
+        {/* CV Download button */}
+        <motion.div 
+          className="cv-download-container" 
+          style={{ textAlign: "center", marginTop: "3rem" }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+        >
+        </motion.div>
       </div>
-
-      {/* CV Download placeholder */}
-      <motion.div 
-        className="cv-download-container" 
-        style={{ textAlign: "center", marginTop: "3rem" }}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.5 }}
-      >
-        {/* Add your button or link here */}
-      </motion.div>
-    </div>
-  </section>
-);
-
+    </section>
+  );
 };
 
 export default Services;
-
-
-
-
