@@ -6,8 +6,8 @@ import { useEffect } from 'react';
 const Hero = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/navinres.pdf';
-    link.download = 'navinres.pdf';
+    link.href = '/22CSR129-Navin.pdf';
+    link.download = '22CSR129-Navin.pdf';
     link.click(); 
   };
 
