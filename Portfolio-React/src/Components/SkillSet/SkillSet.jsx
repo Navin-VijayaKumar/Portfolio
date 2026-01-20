@@ -3,7 +3,7 @@ import './SkillSet.css'
 import react from '../Assets/react.png'
 import sf from '../Assets/sf.png'
 import nodejs from '../Assets/nodejs.png'
-import mondb from '../Assets/mondb.png'
+import mongodb from '../Assets/mongodb.png'
 import fb from '../Assets/fb.png'
 import js from '../Assets/js.png'
 
@@ -38,7 +38,7 @@ const SkillSet = () => {
         </div>
         <div className='rot-item2'>
 
-        <img className='rot-img1' src={mondb}></img>
+        <img className='rot-img1' src={mongodb}></img>
         </div>
         </div>
 

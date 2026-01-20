@@ -1,84 +1,76 @@
-body{
-    font-family: sans-serif;
+/* SkillSet container */
+.rot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
 }
-.rot{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
- padding: 50px;
 
+/* Title */
+.rot h1 {
+  padding: 0 30px;
+  font-size: 80px;
+  font-weight: 600;
+  text-align: center;
 }
-.rot-img{
-    width: 130px;
-    height: 130px;
-    padding: 50px;
 
+/* Icons wrapper */
+.rot-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 140px;
+  flex-wrap: wrap;
+  padding: 80px 0;
+  margin-bottom: 200px;
 }
-.rot-img1{
-    width: 270px;
-    height: 240px;
 
+/* ICON SIZE — MAIN FIX */
+.rot-items img {
+  width: 100px;
+  height: 100px;
 }
-.ser-titlea h1 {
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
-    text-align: center;
-}
-.rot h1{
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
-    text-align: center;
-}
-.rot-items
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-direction: row;
-    padding-bottom: 80px;
-    padding-top: 80px;
-    margin-bottom: 200px;
-}
+
+/* Animation items */
 .rot-item1 {
-    animation: appear11 10s linear;   
-     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-
+  animation: appear11 10s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
-body {
-  overflow-x: clip;
-}
-
-
-@keyframes appear11{
-    from{
-        opacity: 0;
-        transform: translateX(-100px) rotate(0deg);    }
-    to{
-        opacity: 1;
-        transform: translateX(0) rotate(360deg);    }
-}
 .rot-item2 {
-    animation: appear12 10s linear; 
-       animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+  animation: appear12 10s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
 
+/* Animations */
+@keyframes appear11 {
+  from {
+    opacity: 0;
+    transform: translateX(-100px) rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(360deg);
+  }
 }
-@keyframes appear12{
-    from{
-        opacity: 0;
-        transform: translateX(100px) rotate(0deg);    }
-    to{
-        opacity: 1;
-        transform: translateX(0) rotate(-360deg);    }
+
+@keyframes appear12 {
+  from {
+    opacity: 0;
+    transform: translateX(100px) rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-360deg);
+  }
 }
+
+/* Mobile — hide animation section */
 @media screen and (max-width: 900px) {
-    .rot-items, .rot-item1, .rot-item2 ,.rot{
-        display: none;
-    }
+  .rot {
+    display: none;
+  }
 }
