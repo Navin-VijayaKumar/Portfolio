@@ -1,7 +1,7 @@
 import React from 'react'
 import './SkillSet.css' 
 import react from '../Assets/react.png'
-import java from '../Assets/java.png'
+import sf from '../Assets/sf.png'
 import nodejs from '../Assets/nodejs.png'
 import mondb from '../Assets/mondb.png'
 import fb from '../Assets/fb.png'
@@ -22,7 +22,7 @@ const SkillSet = () => {
         </div>
         <div className='rot-item1'>
 
-        <img className='rot-img' src={java}></img>
+        <img className='rot-img' src={sf}></img>
         </div>
         <div className='rot-item1'>
 

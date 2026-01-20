@@ -33,8 +33,8 @@ const Flow = () => {
         <h2>Projects</h2>
         <small>What Built</small>
         <p>Web Application</p>
-        <p>Mobile App</p>
-        <p>ML Model</p>
+        <p>Salesforce Development</p>
+<p>Lightning Web Components</p>
         <p>UI/UX Design</p>
         <span className='right-con-arrow'></span>
       </div>
@@ -45,6 +45,9 @@ const Flow = () => {
       <div className="text-box">
         <h2>Services</h2>
         <small>What I Offer</small>
+        <p> Intern - Remote | Salesforce Development</p>
+
+
         <p> Intern - Remote | Gaming Console</p>
         <p> Intern - Remote | Student Stress Prediction</p>
         <p></p>
@@ -58,6 +61,8 @@ const Flow = () => {
         <h2>Skillset</h2>
         <small>Core Competencies</small>
         <p>Front-end development with React</p>
+        <p>CRM Automation</p>
+
         <p> Back-end with Node.js and Express js</p>
         <p> Database design in MongoDB </p>
         <p>Project management using Git & GitHub.</p>
@@ -70,8 +75,8 @@ const Flow = () => {
       <div className="text-box">
         <h2>Certifications</h2>
         <small>Learning Milestones</small>
-        <p>MongoDB Associate Developer(Node.js)</p>
         <p>Salesforce AI Specialist</p>
+        <p>MongoDB Associate Developer(Node.js)</p>
         <span className='left-con-arrow'></span>
       </div>
     </div>

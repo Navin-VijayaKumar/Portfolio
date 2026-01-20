@@ -1,0 +1,15 @@
+﻿(function ($) {
+    
+    // removeAll method for easyui tree. 
+    $.extend($.fn.tree.methods, {
+        removeAll: function (jq) {
+            return jq.each(function () {
+                var roots = $(this).tree('getRoots');
+                for (var i = roots.length - 1; i >= 0; i--) {
+                    $(this).tree('remove', roots[i].target);
+                }
+            })
+        }
+    });
+
+})(jQuery);

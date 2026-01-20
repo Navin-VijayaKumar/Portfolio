@@ -15,18 +15,17 @@ const About = () => {
         </div>
         <div className="about-right">
             <div className="about-para">
-                <p>Developing clean website with html, css and javascript and learning frameworks like Nodejs</p>
-                <p>Interested in Frontend Developement and maintain my git repository with all my recent project</p>
+                <p>I approach challenges with patience, clarity, and a solution-focused mindset. I believe in professionalism, teamwork, and continuous growth. </p>
             </div>
             <div className="skils">
                 <div className="about-skils">
-                    <p>HTML & CSS</p><hr style={{width:"45%"}}/>
+                    <p>Salesforce</p><hr style={{width:"45%"}}/>
                 </div>
                 <div className="about-skils">
-                    <p>React JS</p><hr style={{width:"40%"}}/>
+                    <p>MERN Stack</p><hr style={{width:"40%"}}/>
                 </div>
                 <div className="about-skils">
-                    <p>JavaScript</p><hr style={{width:"35%"}}/>
+                    <p>Apex</p><hr style={{width:"35%"}}/>
                 </div>
                 <div className="about-skils">
                     <p>Problem Solving</p><hr style={{width:"45%"}}/>
@@ -37,7 +36,7 @@ const About = () => {
        </div>
        <div className="about-acs">
         <div className="about-ac">
-         <h1>160+</h1>
+         <h1>200+</h1>
          <p>Problens Solved in leedcode</p>
         </div>
         <hr/>

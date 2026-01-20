@@ -3,6 +3,9 @@ import pa from '../Assets/pa.png'
 import ns1 from '../Assets/ns1.png'
 import ns from '../Assets/ns.png'
 import mlpro from '../Assets/mlpro.png'
+import stp from '../Assets/stp.png'
+import image from '../Assets/image.png'
+import lms from '../Assets/lms.png'
 export const ProjectData =[
     {
         id:1,
@@ -39,6 +42,28 @@ export const ProjectData =[
         title: "Student Stress Prediction",
         category: "ML",
     },
+       
+    {
+        id:6,
+        image: stp,
+        title: "Southern Texport",
+        category: "web",
+        link: "https://southerntexport.onrender.com"
+    },
+    {
+        id:7,
+        image: lms,
+        title: "Library Management System",
+        category: "Salesforce",
+        link: ""
+    },
+    {
+        id:8,
+        image: image,
+        title: "Property management system",
+        category: "Salesforce",
+        link: ""
+    },
 ];
 export const projectsNav =[
     {
@@ -46,6 +71,9 @@ export const projectsNav =[
     },
     {
         name:'web',
+    },
+      {
+        name:'Salesforce',
     },
     {
         name:'ML',

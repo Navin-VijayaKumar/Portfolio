@@ -1,0 +1,490 @@
+﻿body {
+}
+
+.gridwrapper {
+    text-align: center;
+}
+
+.gallerygrid {
+    display: inline-block;
+}
+
+    .gallerygrid .asset {
+        display: inline-block;
+        width: 320px;
+        height: 260px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 32px;
+        background-color: white;
+        -webkit-box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.2);
+        text-align: left;
+        overflow: hidden;
+    }
+
+        .gallerygrid .asset .screenshot {
+            background: radial-gradient(#707070, #404040);
+            height: 200px;
+            width: 100%;
+            display: block;
+        }
+
+        .gallerygrid .asset .name, .gallerygrid .asset .author {
+            white-space: nowrap;
+            display: block;
+            overflow: hidden;
+            max-width: 100%;
+            width: 100%;
+            text-overflow: ellipsis;
+        }
+
+
+        .gallerygrid .asset .description {
+            position: relative;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 15px;
+            color: #707070;
+        }
+
+        .gallerygrid .asset .avatar {
+            max-width: 40px;
+            max-height: 40px;
+            display: inline-block;
+        }
+
+        .gallerygrid .asset .details {
+            vertical-align: top;
+            display: inline-block;
+            max-width: 100%;
+            padding-left: 5px;
+            padding-top: 2px;
+        }
+
+        .gallerygrid .asset .stats {
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+            float: right;
+            font-size: 11px;
+            font-weight: normal;
+            color: #A0A0A0;
+        }
+
+            .gallerygrid .asset .stats span {
+                vertical-align: middle;
+            }
+
+
+        .gallerygrid .asset .author {
+            color: #A0A0A0;
+            font-weight: normal;
+            font-size: 13px;
+            padding-top: 3px;
+        }
+
+
+
+
+
+.assetview {
+}
+
+    .assetview .left {
+        width: auto;
+        overflow: hidden;
+    }
+
+    .assetview .info.right {
+        height: auto;
+        width: 320px;
+        margin-left: 20px;
+    }
+
+    .assetview .previewWrapper {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 62.5%;
+    }
+
+    .assetview .preview {
+        position: absolute;
+        background: radial-gradient(#707070, #404040);
+        background-color: black;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+        .assetview .preview .buttons {
+            position: absolute;
+            right: 12px;
+            bottom: 8px;
+        }
+
+        .assetview .preview .iconButton {
+            opacity: 0.2;
+        }
+
+            .assetview .preview .iconButton:hover {
+                opacity: 1.0;
+            }
+
+    .assetview canvas {
+        width: 100%;
+        height: 100%;
+    }
+
+    .assetview .info {
+        float: right;
+        background-color: white;
+        -webkit-box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.2);
+        /*margin-left: 20px;*/
+        padding: 10px;
+        vertical-align: top;
+        position: relative;
+    }
+
+        .assetview .info .header {
+            font-size: 21px;
+        }
+
+        .assetview .info hr {
+            border: 0;
+            border-top: 1px solid #c0c0c0;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+
+        .assetview .info .detail {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+            .assetview .info .detail span {
+                display: inline-block;
+                vertical-align: top;
+                padding-top: 5px;
+            }
+
+        .assetview .info .category {
+            position: absolute;
+            right: 4px;
+            bottom: 4px;
+        }
+
+
+    .assetview #fpsCounter {
+        position: absolute;
+        top: 2px;
+        right: 4px;
+        color: white;
+        display: none;
+    }
+
+
+    .assetview .stats {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+.comments {
+    margin-top: 50px;
+}
+
+    .comments .comment {
+        margin-top: 14px;
+        border-bottom: 1px solid #c0c0c0;
+        overflow: auto;
+        width: 100%;
+    }
+
+        .comments .comment .avatar {
+            max-width: 64px;
+            max-height: 64px;
+        }
+
+        .comments .comment .author {
+            float: left;
+            margin-bottom: 14px;
+            font-weight: bold;
+            width: 80px;
+            overflow: hidden;
+        }
+
+            .comments .comment .author span {
+                display: block;
+                margin-bottom: 4px;
+            }
+
+        .comments .comment .message {
+            overflow: hidden;
+            margin: 0px;
+            padding: 0px 0px 14px 10px;
+            font-weight: normal;
+            color: #404040;
+        }
+
+
+            .comments .comment .message table {
+                border-spacing: 0px;
+            }
+
+            .comments .comment .message .date {
+                font-size: 11px;
+                border-bottom: 1px solid #c0c0c0;
+            }
+
+            .comments .comment .message .body {
+                padding-top: 8px;
+            }
+
+            .comments .comment .message textarea {
+                width: 600px;
+            }
+
+            .comments .comment .message .cke {
+                margin-top: 2px;
+            }
+
+            .comments .comment .message .cke_top {
+                display: none;
+            }
+
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+    -ms-opacity: 0.3;
+    opacity: 0.4;
+    position: relative;
+}
+
+    .icon.author {
+        top: 2px;
+        background-image: url("images/user.png");
+    }
+
+    .icon.polygons {
+        background-image: url("images/polygon.png");
+    }
+
+    .icon.vertices {
+        background-image: url("images/vertex.png");
+    }
+
+    .icon.views {
+        width: 20px;
+        height: 20px;
+        margin-left: 2px;
+        margin-right: 10px;
+        background-image: url("images/eye.png");
+        top: 5px;
+    }
+
+    .icon.likes {
+        background-image: url("images/star.png");
+        top: 3px;
+    }
+
+    .icon.chat {
+        background-image: url("images/chat.png");
+        left: 2px;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+    }
+
+.smallicon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 1px;
+    margin-left: 3px;
+    -ms-opacity: 0.3;
+    opacity: 0.4;
+    position: relative;
+}
+
+    .smallicon.chat {
+        background-image: url("images/chat_small.png");
+    }
+
+    .smallicon.views {
+        background-image: url("images/eye_small.png");
+    }
+
+    .smallicon.likes {
+        background-image: url("images/star_small.png");
+        top: -1px;
+    }
+
+.categorygrid {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.category {
+    display: inline-block;
+    font-size: 15px;
+    padding: 4px 10px 4px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+    background-color: white;
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #909090;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #404040;
+}
+
+    .category:hover {
+        background-color: #e0e0e0;
+    }
+
+    .category.active {
+        background-color: #d0d0d0;
+    }
+
+
+.button {
+    display: inline-block;
+    font-size: 14px;
+    height: 28px;
+    background: #A0A0A0;
+    color: #404040;
+    border-radius: 3px;
+    margin-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+    .button:hover {
+        background-color: #c0c0c0;
+    }
+
+    .button.active {
+        background: #FF8300;
+        color: white;
+    }
+
+    .button .icon {
+        top: 2px;
+        margin-right: 4px;
+        margin-left: -4px;
+    }
+
+    .button .text {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 6px;
+    }
+
+
+
+.smallbutton {
+    display: inline-block;
+    font-size: 10px;
+    height: 20px;
+    background: #A0A0A0;
+    color: #FFFFFF;
+    border-radius: 3px;
+    /*margin-top: 8px;*/
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+}
+
+    .smallbutton:hover {
+        background-color: #c0c0c0;
+    }
+
+    .smallbutton.active {
+        background: #FF8300;
+        color: white;
+    }
+
+    .smallbutton .icon {
+        top: 3px;
+        left: -3px;
+        margin-right: 4px;
+        margin-left: -4px;
+    }
+
+    .smallbutton .text {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 4px;
+    }
+
+
+
+.iconButton {
+    cursor: pointer;
+}
+
+    .iconButton:hover {
+    }
+
+.right {
+    float: right;
+}
+
+.vertical-spacer {
+    height: 8px;
+}
+
+.breadcrumbbar {
+    margin-bottom: 20px;
+}
+
+    .breadcrumbbar a.breadcrumb {
+        display: inline-block;
+        padding: 4px 8px 4px 8px;
+        background-color: #E0E0E0;
+        border: 1px solid #808080;
+        color: #404040;
+        text-decoration: none;
+    }
+
+        .breadcrumbbar a.breadcrumb:hover {
+            background-color: #808080;
+            color: #F0F0F0;
+        }
+
+/* --- CKEditor configuration; used by gallery AND forum --- */
+
+body.cke_editable {
+    margin: 2px 4px 2px 4px;
+    font-family: Lato, arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+    body.cke_editable > p {
+        margin: 0px;
+    }
+
+    body.cke_editable:empty {
+        color: #a0a0a0;
+    }
+
+        body.cke_editable:empty:after {
+            content: "Leave a message...";
+        }

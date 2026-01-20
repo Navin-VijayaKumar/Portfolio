@@ -1,0 +1,98 @@
+my domain
+It’s a custom URL that replaces the generic Salesforce login.
+
+
+record type
+-based on the field the value in the check list change 
+eg: book:technical  checkbox-networking,programming,os
+eg: book:non-technical  checkbox-history,scaping
+
+
+Schema Builder
+Schema Builder is a tool inside Salesforce that gives you a GUI (graphical user interface) to view and manage your data model (objects, fields, and relationships).
+
+
+
+
+market place
+Introduction
+An online marketplace for Salesforce Apps, Components,
+and consulting Services.
+Developers or Consultants can use it as a gateway for
+connecting with customer to provide their business
+solutions.
+Salesforce Admins or Users can find tools to improve their
+company's productivity.
+
+app Exchange works
+Primary marketing tool for promoting App or Components.--add
+In listing one can describe Solution, Pricing, Support and
+Other details.--provide service, provide solution  
+Can also upload videos, white papers and other contents
+to help customers understand the app or component.
+
+AppExchange categorizes the listing into various business
+areas like sales, marketing or analytics.
+
+---
+
+
+Email templates
+can create custom Email templates or a pre bulild Email templates and send mail to the students record by inserting the created format
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Email Alerts
+Email alerts are the emails that workflow rules send when triggered.
+
+An Email Alert is an automated email that Salesforce sends to one or more recipients when certain conditions are met.
+
+It’s not standalone → it is used inside Workflow Rules, Approval Processes, or Flows.
+
+Triger by Workflow, Process Builder, Flow, Approval Process
+
+
+
+
+
+What is an Opportunity in Salesforce?
+
+An Opportunity = A potential revenue-generating deal with a customer.
+
+It’s a standard object in Salesforce used to track sales.
+
+Each Opportunity represents money you expect to earn if the deal closes.
+👉 Example:
+
+In a school/college app, an Opportunity could be “Student Admission – Navin”.
+---------------------------------------------------------------------
+What is a Stage?
+
+Stage is a picklist field inside Opportunity.
+
+It tells you the current step of the sales process.
+
+Each stage has a probability (%) of closing the deal.
+
+Stage is like a round
+
+             (%)
+1 round       10%
+
+2 round       25%
+
+3 round       50%
+
+4 round       75%
+
+5 round       90%
+ 
+6 round(placed)100%
+
+7 not placed 0%
+
+student is a opportunity stage is the round he cleared and stage is progression indicator tell placed or not in %
+
+
+
+
+

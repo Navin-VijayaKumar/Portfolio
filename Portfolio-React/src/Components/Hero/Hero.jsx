@@ -18,11 +18,10 @@ const Hero = () => {
 
       <img className="pic" src={profilepic} alt="Profile" />
       <h1>
-        <span>Hello, I'am Navin,</span>A full stack developer
+        <span>Hello, I'am Navin</span>
       </h1>
       <p>
-        A passionate Web developer with experience in creating full stack websites using HTML, CSS, MongoDB, Node.js, and JavaScript, as well as solving coding problems on platforms using languages like Java, Python, and C.
-      </p>
+I am a dedicated and adaptable fresher who loves learning new things,  With hands-on experience in Salesforce development, Full Stack projects      </p>
       <div className="hero-action">
       <div className="hero-cunnect">
         <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink>

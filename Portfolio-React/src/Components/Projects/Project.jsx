@@ -17,26 +17,33 @@ const Project = () => {
     }
   },[item])
   return (
-    <>
-    <div className="project__filters">
-      {projectsNav.map((item,index)=>{
-        return(
-          <span onClick={(e)=>{
-              console.log(index)
-              setItem({name: e.target.textContent})
-              setActive(index);
-          }} className={active === index ? "project__item activeNav" : "project__item"} key={index}>{item.name}</span>
-        )
-      })}
-    </div>
-    <div className="project__container container">
-        {
-          projects.map((item)=>{
-            return <ProjectItems item={item} key={item.id}/>
-          })
-        }
-    </div>
-    </>
+   <>
+  <div className="project__filters">
+    {projectsNav.map((item, index) => {
+      return (
+        <span
+          key={index}
+          onClick={(e) => {
+            setItem({ name: e.target.textContent });
+            setActive(index);
+          }}
+          className={
+            active === index ? "project__item activeNav" : "project__item"
+          }
+        >
+          {item.name}
+        </span>
+      );
+    })}
+  </div>
+
+  <div className="project__container container">
+    {projects.slice(0, 5).map((item) => (
+      <ProjectItems item={item} key={item.id} />
+    ))}
+  </div>
+</>
+
   )
 }
 

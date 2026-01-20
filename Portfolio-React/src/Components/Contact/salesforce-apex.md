@@ -1,0 +1,809 @@
+##### **APEX--Introduction**
+
+Object Oriented Programming Language
+
+--Supports classes, interfaces and inheritance
+
+-- Uses Java like syntax
+
+Strongly typed
+
+-- Validates references to objects at compile time.
+
+Integrated with the database.
+
+--Provides direct access to records and their fields.
+
+Enable developers to add business logics to system events, including button clicks,
+
+related recoid updates, Visualforce pages and Lightning Components.
+
+One can call apex code through Web Service request and Triggers on Objects.
+
+
+
+##### **Apex is:**
+
+
+
+Integrated
+
+o Provides built-in support for common Lightning Platform idioms
+
+Easy to Use
+
+o Uses syntax and semantics which are easy to use and understand.
+
+o Apex is based on familiar Java Idioms.
+
+Data Focused
+
+o Provides transactional access to the database, allows you to roll back operations.
+
+Rigorous
+
+o Strongly typed language that uses direct references to schema objects such as
+
+object and fields API.
+
+\\\\
+
+
+
+Salesforce Bootcamp 2023 | Introduction to Apex Programming | Learn Live with Sanjay Gupta
+
+•
+
+•
+
+Multi tenant Aware
+
+o Apex runs in multi tenant environment like rest of Lightning Platform.
+
+Easy to Test
+
+o Apex provides built-in support for unit test creation and execution. Test
+
+results indicate how much code is covered.
+
+Versioned
+
+o One can save apex code against different versions of the API.
+
+
+
+##### Apex is included in:
+
+
+
+Performance Edition
+
+Unlimited Edition
+
+Developer Edition
+
+Enterprise Edition
+
+Database.com
+
+
+
+
+
+##### Use Apex when you want to:
+
+
+
+Create Web and Email Services.
+
+Perform Complex validation over more than one objects.
+
+Create complex business logics those cannot be implemented by FLOWS.
+
+Create custom logic that occurs over the entire transaction.
+
+Attach custom logic to another operation, such as Create/Update/Save a
+
+record, so that it occurs whenever the operation is executed, regardless it
+
+originates in Ul, VF or from API.
+
+
+
+
+
+###### **🔹 When Apex Knowledge Becomes Important**
+
+
+
+You’ll need Apex if your agent must do advanced/custom tasks like:
+
+
+
+Custom Actions
+
+Example: “Give me the list of top 5 customers with overdue payments.”
+
+
+
+Standard queries may not support it → You’d write an Apex method as an Agent action.
+
+
+
+Integrations
+
+Example: “Fetch latest lead data from an external API (HubSpot, LinkedIn Ads).”
+
+
+
+You’d need Apex callouts to connect external systems.
+
+
+
+Complex Logic
+
+Example: “Calculate campaign ROI across multiple objects with custom formulas.”
+
+
+
+Flows might struggle → Apex gives full control.
+
+
+
+
+
+###### **Sales \& Marketing Agent project**
+
+
+
+🔹 Difficulty Rating by Phase
+
+
+
+Basic Agent (Q\&A on Salesforce data) → 3/10
+
+
+
+Create Agentforce agent.
+
+
+
+Connect to standard Salesforce objects (Leads, Accounts, Opportunities, Campaigns).
+
+
+
+Use natural language queries.
+
+✅ Beginner-friendly, mostly configuration.
+
+
+
+Add Flows \& Knowledge Sources → 5/10
+
+
+
+Use Salesforce Flows (drag-and-drop automation).
+
+
+
+Add knowledge docs (sales FAQs, marketing playbooks).
+
+
+
+Allow the agent to not just “answer” but also “do small actions” (like creating a lead).
+
+✅ Moderate effort, no coding required.
+
+
+
+Custom Actions with Apex → 7/10
+
+
+
+Write Apex methods (e.g., custom lead scoring, campaign ROI calculation).
+
+
+
+Expose Apex methods as Agent Actions.
+
+
+
+More flexibility, but requires coding.
+
+✅ Needs Salesforce developer-level knowledge.
+
+
+
+Integrations (Marketing Cloud, External APIs, Data Cloud) → 8–9/10
+
+
+
+Connect Marketing Cloud (campaigns, journeys).
+
+
+
+Integrate external APIs (HubSpot, LinkedIn Ads).
+
+
+
+Use Data Cloud for customer 360 view.
+
+✅ Advanced; requires both Apex + Salesforce admin knowledge.
+
+
+
+Enterprise-Grade Agent (Secure, Scalable, Multi-Cloud) → 9–10/10
+
+
+
+Add Einstein Trust Layer, grounding, prompt engineering.
+
+
+
+Enable multi-agent orchestration (sales + marketing + service agents).
+
+
+
+Scale with governance + compliance.
+
+✅ This is expert-level, usually for experienced Salesforce architects.
+
+
+
+
+
+
+
+
+
+###### **Apex Supports:**
+
+•
+
+Classes, Interfaces, Collections (List, Set, Map)
+
+Objects, Array notation, Expressions, Variables \& Constants.
+
+Conditional Statements (if-else), Control Statement (for, while loop).
+
+Cloud Dev as it is stored, compiled and executed in cloud.
+
+Triggers to call methods.
+
+Database statements to query and search data.
+
+Transactions and rollbacks.
+
+The global access modifier which is more permissive than public, and allows access
+
+across namespaces and applications.
+
+Versioning of Custom Code.
+
+
+
+###### 
+
+
+
+###### **1. Class**
+
+
+
+**A class is a blueprint or template that defines how an object will look and behave.**
+
+
+
+**It contains fields (attributes/data) and methods (functions/behaviors).**
+
+
+
+###### **2. Object**
+
+
+
+**An object is a real-world entity created from a class.**
+
+A Class is a collection of variables and methods.
+
+
+
+
+
+**It represents a specific entity with its own data.**
+
+
+
+**When you create an object, memory is allocated for it.**
+
+
+
+
+
+###### 3\. Instance
+
+
+
+**An instance is just another word for an object created from a class.**
+
+
+
+**When you say “create an instance of a class”, it means you are creating an object.**
+
+
+
+
+
+
+
+
+
+###### **Apex is A Case Insensitive Language**
+
+
+
+###### **Object Oriented Programming**
+
+
+
+Apex is an Object Oriented Programming Language.
+
+An Object is a real world entity or problem.
+
+To represent object logically we implement a class.
+
+Class forms basis for Object Oriented Programming.
+
+A Class is a collection of variables and methods.
+
+Variables are attributes/properties of an Object whereas methods
+
+are behaviors of an Object.
+
+Once class is created then we can use it as a datatype to create an
+
+instance.
+
+
+
+
+
+
+
+
+
+Rectangle
+
+Attributes/Properties
+
+length
+
+breadth
+
+Behaviors
+
+Area
+
+Perimeter
+
+
+
+Class Name -> Rectangle
+
+Variablessw
+
+length
+
+breadth
+
+Methods
+
+area()
+
+perimeter()
+
+
+
+Class as Data Type to Create Instance
+
+Syntax
+
+ ClassName instanceName = new ClassName()
+
+Example
+
+ Rectangle rec= Rectangle()
+
+
+
+Bootcamp 2023 | Introduction to Apex Programming | Learn Live with Sanjay Gupta
+
+
+
+
+
+
+
+
+
+Object Oriented Programming Concepts
+
+Encapsulation
+
+
+
+it is an container protect the methods and variables from outside.
+
+class is a encapsulation
+
+Means collection of variables and methods together Class is an
+
+example of encapsulation.
+
+
+
+
+
+Abstraction
+
+o Hides the process and focus on what to do.
+
+
+
+
+
+Inheritance
+
+o Reusing features of a class into another class.
+
+
+
+////////////////////////
+
+Decimal a;
+
+/ / parameterized constructor
+
+public Square (Decimal a)
+
+this.a = a;
+
+}
+
+///////////////
+
+this is used to consider the class variable not constructor variable 
+
+
+
+
+
+
+
+Experiment
+
+Calculate Area and Perimeter of Square.
+
+
+
+Using non-static method
+
+Using non-static method and constructor
+
+Using static method
+
+Using static method by passing parameters to method
+
+
+
+
+
+
+
+
+
+Category	Examples
+
+Primitive	     Integer, Long, Double, Decimal, Boolean, Date, Datetime, Time, String, ID
+
+sObject	Account,     Contact, Custom\_\_c
+
+Collections	     List, Set, Map
+
+Classes/Obj	     Object, custom classes, interfaces
+
+Enum	             enum CarType { Sedan, SUV }
+
+Special        	     Blob, Void, Null
+
+
+
+
+
+
+
+**🔹 1. Primitive Data Types**
+
+
+
+**These are the basic building blocks in Apex:**
+
+
+
+**Integer → Whole numbers (−2,147,483,648 to 2,147,483,647)**
+
+
+
+**Long → Very large whole numbers (up to 18 digits)**
+
+
+
+**Double → 64-bit number with decimal places (e.g., 3.14159)**
+
+
+
+**Decimal → Arbitrary precision number (best for money, calculations)**
+
+
+
+**Boolean → true / false**
+
+
+
+**Date → Stores only date (e.g., 2025-09-14)**
+
+
+
+**Datetime → Stores date + time (e.g., 2025-09-14 18:30:00)**
+
+
+
+**Time → Stores only time (e.g., 18:30:00)**
+
+
+
+**String → Text (up to 6 MB in heap)**
+
+
+
+**ID → 18-character Salesforce record IDs (e.g., Account Id, Contact Id)**
+
+
+
+
+
+
+
+
+
+
+
+**🔹 2. sObject Types**
+
+
+
+
+
+
+
+
+
+**Represent Salesforce database records (Account, Contact, Lead, Custom\_\_c, etc.)**
+
+
+
+**Example:**
+
+
+
+**Account acc = new Account(Name = 'Test');**
+
+
+
+
+
+
+
+
+
+
+
+
+
+**🔹 3. Collections (used to store multiple values)**
+
+
+
+**List<T> → Ordered collection (like array)**
+
+
+
+**List<String> names = new List<String>{'Navin', 'Sam'};**
+
+
+
+
+
+**Set<T> → Unordered collection, no duplicates**
+
+
+
+**Set<Integer> nums = new Set<Integer>{1,2,3};**
+
+
+
+
+
+**Map<K,V> → Key-value pairs**
+
+
+
+**Map<Id, Account> accMap = new Map<Id, Account>();**
+
+
+
+
+
+
+
+
+
+
+
+**🔹 4. Objects and Interfaces**
+
+
+
+**Object → Root type for all classes.**
+
+
+
+**User-defined classes → You can create your own class.**
+
+
+
+**Interfaces → Like a contract (must implement methods).**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**🔹 5. Enums**
+
+
+
+**Fixed set of constant values.**
+
+
+
+**public enum CarType { Sedan, SUV, Truck }**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**🔹 6. Special Types**
+
+
+
+**Blob → Binary data (e.g., file, image)**
+
+
+
+**Null → Special value meaning “no value”**
+
+
+
+**Void → Used as return type for methods that don’t return anything**
+
+
+
+
+
+
+
+
+
+
+
+
+
+**SOBJECTS**
+
+
+
+
+
+
+
+**Account acc = new Account( ) ;  //class name is object name** 
+
+**acc. Name =' SGTS' ;            //object is acc or instance**
+
+**acc.Rating = 'Hot' ;**
+
+
+
+**insert acc;                     //insert create a new record in the account object**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Standard Object as Data Type:**
+
+**Create an Account record.**
+
+**Create an Account with Related Contact by calling the method**
+
+**created in previous step.**
+
+**Create an Account with Related Contact and Opportunity.**
+
+**Create an Account with Related Contact, Opportunity and Case.**
+
+
+
+
+
+
+
+**public class ContactRecord {**
+
+    **public static void insertData(String ln)**
+
+        **{**
+
+            **Contact obj=new Contact();**
+
+            **obj.Salutation='Mr';**
+
+            **obj.LastName=ln;**
+
+            **insert obj;**
+
+        
+
+        **}**
+
+
+
+**}
+ContactRecord.insertData('walter white');**
+
+
+
+** **
+
