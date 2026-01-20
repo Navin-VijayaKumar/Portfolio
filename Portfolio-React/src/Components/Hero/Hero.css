@@ -174,7 +174,7 @@ a {
 
 }
 
-@media (max-width: 200px) {
+@media (max-width: 400px) {
     .hero img {
 
         margin-top: 120px;
