@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Routes>
 
-      <Route path="/flow" element={<Flow />} />
+      <Route path="/Activities" element={<Flow />} />
 
       <Route
         path="/"

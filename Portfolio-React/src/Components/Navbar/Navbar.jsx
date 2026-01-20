@@ -35,7 +35,7 @@ const closemenu =()=>{
          
     </ul>
     <div className="nav-connect">
- <Link to="/flow" className='anchor-link' offset={50} href='#contact'>Activities</Link>
+ <Link to="/Activities" className='anchor-link' offset={50} href='#contact'>Activities</Link>
     </div>
     </div>
   )
