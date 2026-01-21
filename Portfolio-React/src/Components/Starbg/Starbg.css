@@ -1,33 +1,52 @@
-/* src/components/StarBackground.css */
+/* existing stars */
 .stars {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: black;
-    overflow: hidden;
-  }
-  
-  .star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: white;
-    border-radius: 50%;
-    animation: moveStars 10s linear infinite;
-  }
-  
-  @keyframes moveStars {
-    0% {
-      transform: translateY(0) scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(100vh) scale(0.5);
-      opacity: 0;
-    }
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+}
 
-  
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: moveStars 10s linear infinite;
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, white, rgba(255,255,255,0));
+  opacity: 0.8;
+  transform: rotate(-45deg);
+  animation: shoot 1.5s linear forwards;
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate(0, 0) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(600px, 600px) rotate(-45deg);
+    opacity: 0;
+  }
+}
