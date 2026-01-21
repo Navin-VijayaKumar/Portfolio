@@ -3,119 +3,302 @@
     --title-color: #ffffff;
     --text-color: #cccccc;
     --container-color: #1e1e1e;
-    --container-color-opp: #ffffff; 
+    --container-color-opp: #ffffff;
     --font-medium: 500;
     --normal-font: 1.1rem;
     --small-font: 0.9rem;
-  }
-  .sara{
+}
+
+.sara {
     margin-bottom: 200px;
-  }
-  /* Main Section Styling */
-  .project.section {
+}
+
+/* Project Section Title */
+.ser-titleb {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ser-titleb h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+/* Main Section Styling */
+.project.section {
     background-color: var(--background-color);
     color: var(--text-color);
-    padding: 2rem 0;
-  }
-  
-  /* Filters */
-  .project__filters {
+    padding: 80px 170px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Filters */
+.project__filters {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .project__item {
+    margin-bottom: 60px;
+}
+
+.project__item {
     color: var(--title-color);
     padding: 0.25rem 0.75rem;
     font-weight: var(--font-medium);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     text-transform: capitalize;
     font-size: 33px;
     cursor: pointer;
     border: 1px solid #333;
     transition: 0.3s;
-  }
-  
-  .project__item:hover {
+    background-color: transparent;
+}
+
+.project__item:hover {
     background-color: var(--container-color-opp);
     color: var(--container-color);
-  }
-  
-  .activeNav {
+}
+
+.activeNav {
     background-color: var(--container-color-opp);
     color: var(--container-color);
-  }
-  
-  /* Project Grid */
-  .project__container {
+}
+
+/* Project Grid */
+.project__container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-  }
-  
-  /* Project Card */
-  .project__card {
+    width: 100%;
+}
+
+/* Project Card Wrapper */
+.pro-all {
+    width: 100%;
+    max-width: 430px;
+}
+
+/* Project Card */
+.project__card {
     background-color: var(--container-color);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1.25rem;
     border-radius: 1rem;
     transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .project__card:hover {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project__card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-  }
-  
-  /* Image */
-  .project__img {
-    width:430px;
+}
+
+/* Image */
+.project__img {
+    width: 100%;
     height: 300px;
     border-radius: 1rem;
     object-fit: cover;
     margin-bottom: 1rem;
-  }
-  
-  /* Title */
-  .project__title {
+    display: block;
+}
+
+/* Title */
+.project__title {
     font-size: var(--normal-font);
     font-weight: var(--font-medium);
     color: var(--title-color);
     margin-bottom: 0.5rem;
-  }
-  .ser-titleb h1 {
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 25px;
 }
-  
-  /* Button */
-  .project__button {
+
+/* Button */
+.project__button {
     color: var(--text-color);
     font-size: var(--small-font);
     display: flex;
     align-items: center;
-    gap: .25rem;
+    gap: 0.25rem;
     text-decoration: none;
     transition: color 0.3s;
-  }
-  
-  .project__button:hover {
+}
+
+.project__button h3 {
+    font-size: inherit;
+    margin: 0;
+}
+
+.project__button:hover {
     color: var(--container-color-opp);
-  }
-  
-  .project__button-icon {
+}
+
+.project__button-icon {
     font-size: 1rem;
     transition: transform 0.4s;
-  }
-  
-  .project__button:hover .project__button-icon {
+}
+
+.project__button:hover .project__button-icon {
     transform: translateX(0.25rem);
-  }
+}
+
+/* Tablet and Medium Screen Devices */
+@media (max-width: 900px) {
+    .project.section {
+        padding: 60px 40px;
+    }
+
+    .ser-titleb {
+        margin-bottom: 50px;
+    }
+
+    .ser-titleb h1 {
+        font-size: 60px;
+        padding: 0 20px 20px;
+    }
+
+    .project__item {
+        font-size: 26px;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .project__filters {
+        margin-bottom: 40px;
+        gap: 0.75rem;
+    }
+
+    .pro-all {
+        max-width: 380px;
+    }
+
+    .project__img {
+        height: 250px;
+    }
+
+    .sara {
+        margin-bottom: 150px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .project.section {
+        padding: 50px 30px;
+    }
+
+    .ser-titleb {
+        margin-bottom: 40px;
+    }
+
+    .ser-titleb h1 {
+        font-size: 50px;
+    }
+
+    .project__item {
+        font-size: 22px;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .project__container {
+        gap: 1.5rem;
+    }
+
+    .pro-all {
+        max-width: 100%;
+    }
+
+    .project__img {
+        height: 220px;
+    }
+
+    .sara {
+        margin-bottom: 120px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .project.section {
+        padding: 40px 20px;
+    }
+
+    .ser-titleb {
+        margin-bottom: 30px;
+    }
+
+    .ser-titleb h1 {
+        font-size: 42px;
+        padding: 0 10px 15px;
+    }
+
+    .project__filters {
+        gap: 0.5rem;
+        margin-bottom: 30px;
+    }
+
+    .project__item {
+        font-size: 18px;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .project__container {
+        gap: 1.25rem;
+    }
+
+    .project__card {
+        padding: 1rem;
+    }
+
+    .project__img {
+        height: 200px;
+        border-radius: 0.75rem;
+    }
+
+    .project__title {
+        font-size: 1rem;
+    }
+
+    .project__button {
+        font-size: 0.85rem;
+    }
+
+    .project__button h3 {
+        font-size: 0.85rem;
+    }
+
+    .sara {
+        margin-bottom: 100px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+    .project.section {
+        padding: 30px 15px;
+    }
+
+    .ser-titleb h1 {
+        font-size: 36px;
+    }
+
+    .project__item {
+        font-size: 16px;
+    }
+
+    .project__img {
+        height: 180px;
+    }
+
+    .project__card {
+        padding: 0.875rem;
+    }
+
+    .sara {
+        margin-bottom: 80px;
+    }
+}

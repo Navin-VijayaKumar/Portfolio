@@ -299,22 +299,3 @@ body {
         font-size: 14px;
     }
 }
-
-/* Extra Small Devices */
-@media (max-width: 360px) {
-    .about {
-        padding: 0 15px;
-    }
-
-    .about-title h1 {
-        font-size: 36px;
-    }
-
-    .about-para {
-        font-size: 15px;
-    }
-
-    .about-ac h1 {
-        font-size: 28px;
-    }
-}
