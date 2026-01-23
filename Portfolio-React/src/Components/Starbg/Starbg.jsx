@@ -17,21 +17,7 @@ const Starbg = () => {
     }
 
     // 🌠 Shooting star generator
-    const createShootingStar = () => {
-      const shootingStar = document.createElement("div");
-      shootingStar.classList.add("shooting-star");
-
-      shootingStar.style.left = `${Math.random() * 50}%`;
-      shootingStar.style.top = `${Math.random() * 50}%`;
-
-      container.appendChild(shootingStar);
-
-      // Remove after animation
-      setTimeout(() => {
-        shootingStar.remove();
-      }, 1500);
-    };
-
+   
     // Random interval for shooting stars
     const interval = setInterval(() => {
       createShootingStar();
