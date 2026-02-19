@@ -23,9 +23,11 @@ const Hero = () => {
       <p>
 I am a dedicated and adaptable fresher who loves learning new things,  With hands-on experience in Salesforce development, Full Stack projects      </p>
       <div className="hero-action">
+        <AnchorLink className='anchor-link' offset={50} href='#contact'>
       <div className="hero-cunnect">
-        <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink>
+        Connect With Me
     </div>
+    </AnchorLink>
         <div className="hero-resume">
           <button onClick={handleDownloadResume} className="resume-button">
           My Resume

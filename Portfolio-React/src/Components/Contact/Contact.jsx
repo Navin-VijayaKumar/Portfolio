@@ -40,19 +40,14 @@ const Contact = () => {
         <div className="contact-details">
             <div className="contact-detail">
             <img src={message} alt=''></img>
-            <p>navinv.22cse@kongu.edu</p>
+            <p>navinv10122004@gmail.com</p>
             </div>
             <div className="contact-detail">
             <img src={call} alt=''></img>
             <p>8940773056</p>
             </div>
             <div className="contact-detail">
-            <img src={location} alt=''></img>
-            <p>52c,Thiruvalluvar street,
-               Sathyamangalam,
-               Tamil Nadu
-
-            </p>
+            
             </div>
 
         </div>
