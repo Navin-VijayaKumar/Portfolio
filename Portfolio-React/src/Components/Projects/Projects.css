@@ -47,7 +47,7 @@
 }
 
 .project__item {
-    color: var(--title-color);
+    color:  #FCA61F;
     padding: 0.25rem 0.75rem;
     font-weight: var(--font-medium);
     border-radius: 0.5rem;
@@ -61,21 +61,20 @@
 
 .project__item:hover {
     background-color: var(--container-color-opp);
-    color: var(--container-color);
+    color: #FCA61F;
 }
 
 .activeNav {
     background-color: var(--container-color-opp);
-    color: var(--container-color);
+    color:#121212;
 }
 
 /* Project Grid */
 .project__container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
-    width: 100%;
 }
 
 /* Project Card Wrapper */

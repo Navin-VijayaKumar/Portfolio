@@ -25,15 +25,63 @@ const closemenu =()=>{
             <img src={s2} onClick={openmenu} className='nav-open' alt='' ></img>
 
         </div>
-           <ul ref={menuRef}  className="nav-menu">
-            <img src={c2} onClick={closemenu} className='nav-close' alt=''></img>
-            <li><AnchorLink className='anchor-link sstt'  href='#home'><p onClick={()=>setMenu("home")}>Home </p></AnchorLink>{menu==='home'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setMenu("about")}>About me</p></AnchorLink>{menu==='about'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
-            <li><AnchorLink className='anchor-link sstts' offset={50} href='#certificate'><p onClick={()=>setMenu("certificate")}>Certification</p></AnchorLink>{menu==='certificate'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>setMenu("work")}>My Works</p></AnchorLink>{menu==='work'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contact</p></AnchorLink>{menu==='contact'?<img className='paint' src={iconport} alt=''/>:<></>}</li>
-         
-    </ul>
+          <ul ref={menuRef} className="nav-menu">
+  <img src={c2} onClick={closemenu} className='nav-close' alt='' />
+
+  <li onClick={() => setMenu("home")}>
+    <AnchorLink
+      className={`anchor-link ${menu === "home" ? "active" : ""}`}
+      href="#home"
+    >
+      Home
+    </AnchorLink>
+    {menu === "home" && <img className="paint" src={iconport} alt="" />}
+  </li>
+
+  <li onClick={() => setMenu("about")}>
+    <AnchorLink
+      className={`anchor-link ${menu === "about" ? "active" : ""}`}
+      offset={50}
+      href="#about"
+    >
+      About Me
+    </AnchorLink>
+    {menu === "about" && <img className="paint" src={iconport} alt="" />}
+  </li>
+
+  <li onClick={() => setMenu("certificate")}>
+    <AnchorLink
+      className={`anchor-link ${menu === "certificate" ? "active" : ""}`}
+      offset={50}
+      href="#certificate"
+    >
+      Certification
+    </AnchorLink>
+    {menu === "certificate" && <img className="paint" src={iconport} alt="" />}
+  </li>
+
+  <li onClick={() => setMenu("work")}>
+    <AnchorLink
+      className={`anchor-link ${menu === "work" ? "active" : ""}`}
+      offset={50}
+      href="#work"
+    >
+      My Works
+    </AnchorLink>
+    {menu === "work" && <img className="paint" src={iconport} alt="" />}
+  </li>
+
+  <li onClick={() => setMenu("contact")}>
+    <AnchorLink
+      className={`anchor-link ${menu === "contact" ? "active" : ""}`}
+      offset={50}
+      href="#contact"
+    >
+      Contact
+    </AnchorLink>
+    {menu === "contact" && <img className="paint" src={iconport} alt="" />}
+  </li>
+</ul>
     <div className="nav-connect">
  <Link to="/Activities" className='anchor-link' offset={50} href='#contact'>Activities</Link>
     </div>

@@ -10,6 +10,9 @@ import Projects from './Components/Projects/Projects'
 import Starbg from './Components/Starbg/Starbg'
 import Flow from './Components/Flow/Flow'
 import Services from './Components/Services/Services'
+import Education from './Components/Edu/Education'
+import Footer from './Components/Footer/Footer'
+import Skills from './Components/Skills/Skills'
 const App = () => {
   return (
     <Routes>
@@ -24,11 +27,14 @@ const App = () => {
             <Navbar />
             <Hero />
             <About />
+            <Education></Education>
             <SkillSet />
+            <Skills></Skills>
             {/* <Services /> */}
             <ProjectItems />
             <Projects />
             <Contact />
+            <Footer></Footer>
           </>
         }
       />

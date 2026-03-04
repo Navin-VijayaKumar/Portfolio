@@ -31,13 +31,14 @@
 .contact-left {
     display: flex;
     flex-direction: column;
+
     gap: 30px;
 }
 
 .contact-left h1 {
     font-size: 80px;
     font-weight: 700;
-    background: linear-gradient(150deg, #DA7C25, #B923E1 102.06%);
+    background: linear-gradient(150deg, #e87810, #B923E1 150%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

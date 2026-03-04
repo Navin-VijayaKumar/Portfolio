@@ -32,7 +32,7 @@ body {
 }
 
 .hero h1 span {
-    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background: linear-gradient(270deg, #DF8908 55%, #B415FF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -65,7 +65,7 @@ a {
 .hero-cunnect {
     padding: 25px 45px;
     border-radius: 50px;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF);
+    background: linear-gradient(264deg, #DF8908 7.09%, #B415FF);
     cursor: pointer;
     border: 2px solid white;
     transition: 0.5s;
@@ -77,7 +77,7 @@ a {
     border-radius: 50px;
     border: 2px solid white;
     cursor: pointer;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF);
+    background: linear-gradient(264deg, #DF8908 7.09%, #B415FF);
     box-sizing: border-box;
     display: flex;
     align-items: center;

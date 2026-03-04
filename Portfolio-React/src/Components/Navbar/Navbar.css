@@ -23,7 +23,7 @@ body {
 .nav-connect {
     padding: 20px 40px;
     border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25, #B923E1 102.06%);
+    background: linear-gradient(267deg, #DA7C25, #B923E1 90.06%);
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
@@ -38,7 +38,20 @@ body {
     width: 90px;
     height: 20px;
 }
+.anchor-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
 
+.anchor-link.active {
+  color: #FCA61F;
+}
+
+.nav-menu li {
+  position: relative;
+  cursor: pointer;
+}
 .nav-menu li {
     display: flex;
     flex-direction: column;

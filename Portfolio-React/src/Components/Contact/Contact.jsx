@@ -37,20 +37,7 @@ const Contact = () => {
     <div className="contact-left">
         <h1>Let's talk</h1>
         <p>I'am currently avaliable to take on new projects, so feel free to send me a message about anything that you want</p>
-        <div className="contact-details">
-            <div className="contact-detail">
-            <img src={message} alt=''></img>
-            <p>navinv10122004@gmail.com</p>
-            </div>
-            <div className="contact-detail">
-            <img src={call} alt=''></img>
-            <p>8940773056</p>
-            </div>
-            <div className="contact-detail">
-            
-            </div>
-
-        </div>
+        
     </div>
     <form onSubmit={onSubmit} className='contact-right'>
         <label htmlFor=''>Your Name</label>
